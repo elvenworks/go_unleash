@@ -1,4 +1,4 @@
-module github.com/hugokishi/go_unleash
+module github.com/elvenworks/go_unleash
 
 go 1.19
 

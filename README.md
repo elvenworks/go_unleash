@@ -3,11 +3,11 @@ Package go_unleash implements the possibility to connect your app to unleash in 
 ## Installation
 Use go get.
 ```
-go get github.com/hugokishi/go_unleash
+go get github.com/elvenworks/go_unleash
 ```
 Then import the validator package into your own code.
 ```
-import "github.com/hugokishi/go_unleash"
+import "github.com/elvenworks/go_unleash"
 ```
 
 ## Usage
@@ -16,8 +16,8 @@ Sample code:
 package main
 
 import (
-	go_unleash "github.com/hugokishi/go_unleash"
-	"github.com/hugokishi/go_unleash/internal/domain/structs"
+	go_unleash "github.com/elvenworks/go_unleash"
+	"github.com/elvenworks/go_unleash/internal/domain/structs"
 )
 
 func  main() {
