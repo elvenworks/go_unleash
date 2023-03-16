@@ -71,6 +71,8 @@ func (u *Unleash) IsEnabledContext(flagName string, ctx context.Context) bool {
 
 	if memory.APP_ENV_AppEnvironment != "production" {
 		composedFlag = fmt.Sprintf("%v-%v", memory.APP_ENV_AppEnvironment, flagName)
+	} else {
+		composedFlag = flagName
 	}
 
 	isEnabled := unleash.IsEnabled(composedFlag, unleash.WithContext(ctx))
