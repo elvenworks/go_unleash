@@ -56,6 +56,8 @@ func (u *Unleash) IsEnabled(flagName string) bool {
 
 	if memory.APP_ENV_AppEnvironment != "production" {
 		composedFlag = fmt.Sprintf("%v-%v", memory.APP_ENV_AppEnvironment, flagName)
+	} else {
+		composedFlag = flagName
 	}
 
 	isEnabled := unleash.IsEnabled(composedFlag)
