@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/Unleash/unleash-client-go/v3 v3.7.4
 	github.com/go-playground/validator/v10 v10.13.0
-	github.com/sirupsen/logrus v1.9.0
+	github.com/sirupsen/logrus v1.9.2
 	github.com/stretchr/testify v1.8.2
 	github.com/zput/zxcTool v1.3.10
 )
