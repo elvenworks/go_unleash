@@ -80,3 +80,7 @@ func (u *Unleash) IsEnabledContext(flagName string, ctx context.Context) bool {
 
 	return isEnabled
 }
+
+func (u *Unleash) WaitForReady() {
+	unleash.WaitForReady()
+}
